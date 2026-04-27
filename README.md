@@ -1,37 +1,94 @@
-# BITSA Club
+# BITSA Club Platform
 
-BITSA Club is a student platform built with Next.js (frontend) and Express (backend).
+A full-stack student platform built with **Next.js (frontend)** and **Express + MongoDB (backend)**.
+The system allows students to interact with events, blogs, galleries, and announcements in a centralized platform.
 
-## Quick Start
-1. **Install dependencies**
-   ```bash
-   npm install
-   cd backend && npm install
-   ```
-2. **Create env files**
-   - `backend/.env`
-     ```env
-     PORT=5000
-     MONGODB_URI=mongodb://localhost:27017/bitsa_club
-     JWT_SECRET=replace_me
-     NODE_ENV=development
-     FRONTEND_URL=http://localhost:3000
-     ```
-   - `.env.local`
-     ```env
-     NEXT_PUBLIC_API_URL=http://localhost:5000/api
-     ```
-3. **Run the app**
-   ```bash
-   # Terminal 1
-   cd backend && npm run dev
 
-   # Terminal 2 (project root)
-   npm run dev
-   ```
-4. **Visit** `http://localhost:3000`
+##  Features
 
-## Contact
-- Email: bitsaclub@ueab.ac.ke
-- President: Alpha Chamba – 0708898899
-- Vice President: Gloria Jebet – 0725486687
+ User authentication (JWT-based)
+ Blog posts & announcements
+ Events management
+ Image gallery uploads
+ Contact system
+ Admin dashboard
+
+
+##  Tech Stack
+
+Frontend: Next.js, React
+Backend: Node.js, Express
+Database: MongoDB (Mongoose)
+ Authentication: JWT + Cookies
+
+
+# Installation & Setup
+
+# 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+cd YOUR_REPO
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+cd backend && npm install
+```
+
+
+##  Environment Variables
+
+### Backend (`backend/.env`)
+
+```env
+PORT=5000
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+NODE_ENV=development
+FRONTEND_URL=http://localhost:3000
+```
+
+### Frontend (`.env.local`)
+
+```env
+NEXT_PUBLIC_API_URL=http://localhost:5000/api
+```
+
+##  Running the App
+
+### Start backend
+
+```bash
+cd backend
+npm run dev
+```
+
+### Start frontend
+
+```bash
+npm run dev
+```
+
+##  Access the App
+
+Open your browser:
+
+```
+http://localhost:3000
+```
+
+
+##  Notes
+
+* Ensure MongoDB is running or use MongoDB Atlas
+* Replace environment variables with your own values
+
+
+##  Author
+
+Developed and customized by Shereen
+
+
