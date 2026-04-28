@@ -16,6 +16,10 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+app.get('/', (req, res) => {
+  res.send('BITSA API is running smoothly!');
+});
+
 // Connect to database
 console.log('Starting backend server...');
 connectDB();
@@ -59,3 +63,4 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
+module.exports = app;

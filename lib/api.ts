@@ -2,10 +2,16 @@ import axios from 'axios';
 import Cookies from 'js-cookie';
 
 const getApiUrl = () => {
-  if (typeof window !== 'undefined') {
-    return `http://${window.location.hostname}:5000/api`;
+  if (process.env.NEXT_PUBLIC_API_URL) {
+    return process.env.NEXT_PUBLIC_API_URL;
   }
-  return process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+  if (typeof window !== 'undefined') {
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+      return `http://${window.location.hostname}:5000/api`;
+    }
+    return '/api';
+  }
+  return 'http://localhost:5000/api';
 };
 
 const api = axios.create({
