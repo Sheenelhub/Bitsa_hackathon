@@ -83,8 +83,8 @@ http://localhost:3000
 
 ##  Notes
 
-* Ensure MongoDB is running or use MongoDB Atlas
-* Replace environment variables with your own values
+ Ensure MongoDB is running or use MongoDB Atlas
+Replace environment variables with your own values
 
 
 ##  Author

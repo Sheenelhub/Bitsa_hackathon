@@ -107,15 +107,14 @@ export const getContactInfo = async (req: Request, res: Response): Promise<void>
     const contactInfo = {
       email: 'bitsaclub@ueab.ac.ke',
       president: {
-        name: 'Alpha Chamba',
-        phone: '0708898899',
+        name: 'Gael Loise',
+        phone: '0705567890',
       },
       vicePresident: {
-        name: 'Gloria Jebet',
-        phone: '0725486687',
+        name: 'Shereen Njuguna',
+        phone: '0748876579',
       },
     };
-
     res.status(200).json({
       success: true,
       data: contactInfo,

@@ -4,7 +4,12 @@ export default function Home() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 to-blue-800 overflow-hidden">
+      <div
+        className="relative overflow-hidden bg-cover bg-center"
+        style={{ backgroundImage: "url('/hero-bg.png')" }}
+      >
+        <div className="absolute inset-0 bg-blue-900/70 mix-blend-multiply" />
+
         <div className="max-w-7xl mx-auto">
           <div className="relative z-10 pb-8 bg-transparent sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
             <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
